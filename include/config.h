@@ -14,7 +14,7 @@
 
 #define N_LEVEL 3
 #define N_STATUS 6
-#define N_IP_BUCKER 256
+#define N_IP_BUCKET 256
 
 #define MAX_WORKER 64
 
