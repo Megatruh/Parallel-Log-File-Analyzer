@@ -61,3 +61,10 @@ Thumbs.db
 *.tmp
 *.bak
 *.swp
+
+# binary gen_log di root repo
+gen_log
+main_bug
+main_final
+*.log
+build/

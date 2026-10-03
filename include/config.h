@@ -5,7 +5,7 @@
 #define NAMA "Farhan Esha Putra Kusuma Atmaja"
 #define JUDUL "Parallel Log File Analyzer"
 
-#define SEED_NIM 247006111ULL
+#define SEED_NIM 247006111066ULL
 #define DATA_BASE (66L * 10000L)
 
 #ifndef ROUNDS 
