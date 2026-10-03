@@ -128,7 +128,7 @@ python3 script/plot.py
 - [x] `gen_log`
 - [x] `loader`, `parser`
 - [x] `chunker`, `analyzer`
-- [ ] `report`, `seq_runner`
+- [x] `report`, `seq_runner`
 - [ ] `thread_runner`, `main_bug`, `main_final`
 - [ ] `proc_runner`
 - [ ] `Makefile`
