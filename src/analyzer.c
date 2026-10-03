@@ -42,7 +42,7 @@ void analyzer_merge(Result *dst, const Result *src) {
 }
 
 int analyzer_equal(const Result *a, const Result *b) {
-    return a->lines == b->lines && a->fp && b->fp &&
+    return a->lines == b->lines && a->fp == b->fp &&
         memcmp(a->level, b->level, sizeof a->level) == 0 &&
         memcmp(a->status, b->status, sizeof a->status) == 0 &&
         memcmp(a->ip, b->ip, sizeof a->ip) == 0;
