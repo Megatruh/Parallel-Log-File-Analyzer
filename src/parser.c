@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include "parser.h"
 
-#define FAIL() do { fprintf(stderr, "parse gagal di baris %d\n", __LINE__); return 0; } while (0)
 
 static const int STATUS_CODES[N_STATUS] = {200, 301, 403, 404, 500, 503};
 
@@ -38,7 +37,7 @@ int parser_parse_line(const char *line, size_t len, Parsed *out) {
     const char *lb = memchr(line, '[', len);
     if (!lb || lb + 1 >= end)
     {
-        FAIL();
+        return 0;
     }
     switch (lb[1])
     {
@@ -53,18 +52,18 @@ int parser_parse_line(const char *line, size_t len, Parsed *out) {
         break;
     
     default:
-        FAIL();
+        return 0;
         break;
     }
 
     const char *rb = memchr(lb, ']', (size_t)(end -4));
     if (!rb || rb + 2 >= end) {
-        FAIL();
+        return 0;
     }
     const char *ip = rb + 2;
     const char *sp = memchr(ip,' ', (size_t)(end-ip));
     if (!sp) {
-        FAIL();
+        return 0;
     }
     const char *dot = sp;
     while (dot > ip && *dot != '.')
