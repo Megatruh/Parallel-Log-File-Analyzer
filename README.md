@@ -236,12 +236,10 @@ Catatan:
 - [x] `loader`, `parser`
 - [x] `chunker`, `analyzer`
 - [x] `report`, `seq_runner`
-- [x] `thread_runner`, `proc_runner`
-- [x] `main_bug`, `main_final`
+- [x] `thread_runner`, `main_bug`, `main_final`
+- [x] `proc_runner`
 - [x] `Makefile`
 - [x] `bench.sh`, `plot.py`
-- [x] Percobaan dan grafik
-- [ ] Diagram arsitektur
 - [ ] Laporan PDF (`UTS_NIM_Nama.pdf`)
 
 ## Lisensi
