@@ -1,0 +1,15 @@
+Tanggal   : 2026-10-04 18:02:28
+nproc     : 12
+CPU(s):                                  12
+Model name:                              13th Gen Intel(R) Core(TM) i5-1335U
+Thread(s) per core:                      2
+Core(s) per socket:                      10
+Socket(s):                               1
+CPU(s) scaling MHz:                      94%
+CPU max MHz:                             1300.0000
+L3 cache:                                12 MiB (1 instance)
+ROUNDS    : 30
+SIZES     : 165000 330000 660000
+WORKERS   : 1 2 4 8
+REPS      : 3 (diambil waktu proses tercepat)
+Kernel    : 7.2.8-200.fc44.x86_64

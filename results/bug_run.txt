@@ -1,0 +1,16 @@
+============================================================
+Parallel Log File Analyzer
+MODE BUG: RACE CONDITION
+By Farhan Esha Putra Kusuma Atmaja (247006111066)
+============================================================
+Jumlah thread   : 8
+Baris seharusnya: 660000
+------------------------------------------------------------
+Percobaan 1: 226356 baris (hilang 433644), checksum BEDA, 0.162 detik -> SALAH
+Percobaan 2: 263313 baris (hilang 396687), checksum BEDA, 0.151 detik -> SALAH
+Percobaan 3: 230233 baris (hilang 429767), checksum BEDA, 0.162 detik -> SALAH
+Percobaan 4: 230889 baris (hilang 429111), checksum BEDA, 0.162 detik -> SALAH
+Percobaan 5: 277319 baris (hilang 382681), checksum BEDA, 0.152 detik -> SALAH
+------------------------------------------------------------
+Hasil salah: 5 dari 5 percobaan
+KESIMPULAN: RACE CONDITION TERDETEKSI (hasil tidak konsisten)
